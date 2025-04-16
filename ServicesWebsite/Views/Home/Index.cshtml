@@ -1,8 +1,291 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@{
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-shape shape-1"></div>
+    <div class="hero-shape shape-2"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="hero-title">Creative <span>Design</span> & Professional <span>Development</span></h1>
+                <p class="hero-description">We bring your digital vision to life with exceptional design and development services tailored to your unique needs.</p>
+                <div class="hero-cta">
+                    <a href="#services" class="btn-primary">Our Services</a>
+                    <a href="#portfolio" class="btn-secondary">View Portfolio</a>
+                </div>
+                <div class="client-logos d-none d-md-flex align-items-center">
+                    <p class="mb-0 me-3 text-muted fw-500">Trusted by:</p>
+                    <div class="d-flex gap-4 align-items-center opacity-50">
+                        <i class="fab fa-google fs-3"></i>
+                        <i class="fab fa-amazon fs-3"></i>
+                        <i class="fab fa-spotify fs-3"></i>
+                        <i class="fab fa-slack fs-3"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <img src="https://img.freepik.com/free-vector/website-development-banner_33099-1687.jpg" alt="JRon Services - Design and Development" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services section" id="services">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <p class="section-subtitle" data-aos="fade-up">WHAT WE OFFER</p>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Our Expert Services</h2>
+                <p class="section-description mx-auto" data-aos="fade-up" data-aos-delay="200">We provide comprehensive design and development solutions to help you build a strong digital presence.</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Design Services -->
+            <div class="col-md-6 mb-4" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title">Graphic Design</h3>
+                    <p class="service-description">Professional visual design solutions tailored to your brand and message, from logos to marketing materials.</p>
+                    <a href="#" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">Intuitive user interface and experience design that keeps your users engaged and delighted.</p>
+                    <a href="#" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <!-- Development Services -->
+            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">Custom website development solutions built with modern technologies to deliver exceptional performance.</p>
+                    <a href="#" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Mobile App Development</h3>
+                    <p class="service-description">Native and cross-platform mobile applications that provide seamless experiences across devices.</p>
+                    <a href="#" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section class="portfolio section" id="portfolio">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <p class="section-subtitle" data-aos="fade-up">OUR WORK</p>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Featured Projects</h2>
+                <p class="section-description mx-auto" data-aos="fade-up" data-aos-delay="200">Explore our latest work showcasing our expertise in design and development.</p>
+            </div>
+        </div>
+        <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="300">
+            <span class="portfolio-filter active" data-filter="all">All</span>
+            <span class="portfolio-filter" data-filter="design">Design</span>
+            <span class="portfolio-filter" data-filter="development">Development</span>
+            <span class="portfolio-filter" data-filter="branding">Branding</span>
+        </div>
+        <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="400">
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio-item" data-category="design">
+                <img src="https://img.freepik.com/free-vector/africa-day-celebration-design_23-2149410015.jpg" alt="African Day Design" class="portfolio-image">
+                <div class="portfolio-overlay">
+                    <h4 class="portfolio-title">Africa Day Celebration</h4>
+                    <p class="portfolio-category">Graphic Design</p>
+                </div>
+                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+            </div>
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio-item" data-category="branding">
+                <img src="https://img.freepik.com/free-vector/religious-event-poster-template_23-2149544021.jpg" alt="Worship Event Branding" class="portfolio-image">
+                <div class="portfolio-overlay">
+                    <h4 class="portfolio-title">Collective Worship Event</h4>
+                    <p class="portfolio-category">Event Branding</p>
+                </div>
+                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+            </div>
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio-item" data-category="design">
+                <img src="https://img.freepik.com/free-vector/location-announcement-template_23-2149380060.jpg" alt="Moving Announcement" class="portfolio-image">
+                <div class="portfolio-overlay">
+                    <h4 class="portfolio-title">Location Change Announcement</h4>
+                    <p class="portfolio-category">Graphic Design</p>
+                </div>
+                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+            </div>
+            <!-- Portfolio Item 4 -->
+            <div class="portfolio-item" data-category="development">
+                <img src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg" alt="E-commerce Website" class="portfolio-image">
+                <div class="portfolio-overlay">
+                    <h4 class="portfolio-title">E-commerce Platform</h4>
+                    <p class="portfolio-category">Web Development</p>
+                </div>
+                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+            </div>
+            <!-- Portfolio Item 5 -->
+            <div class="portfolio-item" data-category="design">
+                <img src="https://img.freepik.com/free-vector/women-empowerment-concept_23-2148590033.jpg" alt="Ladies Event Design" class="portfolio-image">
+                <div class="portfolio-overlay">
+                    <h4 class="portfolio-title">Ladies Hangout Event</h4>
+                    <p class="portfolio-category">Event Design</p>
+                </div>
+                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+            </div>
+            <!-- Portfolio Item 6 -->
+            <div class="portfolio-item" data-category="development">
+                <img src="https://img.freepik.com/free-vector/mobile-app-development-concept_23-2148683810.jpg" alt="Mobile App" class="portfolio-image">
+                <div class="portfolio-overlay">
+                    <h4 class="portfolio-title">Health Tracking App</h4>
+                    <p class="portfolio-category">Mobile Development</p>
+                </div>
+                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+            </div>
+        </div>
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
+            <a href="#" class="btn-primary">View All Projects</a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials section">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <p class="section-subtitle" data-aos="fade-up">TESTIMONIALS</p>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">What Our Clients Say</h2>
+                <p class="section-description mx-auto" data-aos="fade-up" data-aos-delay="200">Feedback from our valued clients about their experience working with JRon Services.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4" data-aos="fade-up">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote"><i class="fas fa-quote-right"></i></div>
+                    <p class="testimonial-content">"The team at JRon Services delivered a website that exceeded our expectations. Their attention to detail and commitment to quality was impressive. I highly recommend their services!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>John Doe</h4>
+                            <p>CEO, TechStart</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote"><i class="fas fa-quote-right"></i></div>
+                    <p class="testimonial-content">"Working with JRon Services on our branding was a game-changer. They captured our vision perfectly and translated it into a beautiful visual identity that represents our brand values."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Marketing Director, Bloom Beauty</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-6 mb-4 mb-md-0">
+                <div class="stat-item" data-aos="fade-up">
+                    <span class="stat-number">120+</span>
+                    <span class="stat-text">Clients</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mb-4 mb-md-0">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <span class="stat-number">250+</span>
+                    <span class="stat-text">Projects</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-text">Years</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-text">Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2 class="cta-title" data-aos="fade-up">Ready to bring your vision to life?</h2>
+            <p class="cta-description" data-aos="fade-up" data-aos-delay="100">Let's collaborate to create something amazing together. Contact us today to discuss your project!</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="#" class="btn-primary">Get Started</a>
+                <a href="#" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        // Initialize AOS animation library
+        document.addEventListener("DOMContentLoaded", function() {
+            AOS.init({
+                once: true,
+                disable: 'mobile'
+            });
+
+            // Portfolio filtering
+            const filters = document.querySelectorAll('.portfolio-filter');
+            const items = document.querySelectorAll('.portfolio-item');
+
+            filters.forEach(filter => {
+                filter.addEventListener('click', function() {
+                    // Remove active class from all filters
+                    filters.forEach(f => f.classList.remove('active'));
+                    // Add active class to clicked filter
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    items.forEach(item => {
+                        const category = item.getAttribute('data-category');
+                        if (filterValue === 'all' || filterValue === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+}
